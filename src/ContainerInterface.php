@@ -10,7 +10,6 @@
 
 namespace OpxCore\Container\Interfaces;
 
-use Closure;
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 interface ContainerInterface extends PsrContainerInterface
@@ -19,8 +18,8 @@ interface ContainerInterface extends PsrContainerInterface
      * Register a binding with the container.
      *
      * @param string $abstract
-     * @param Closure|string|null $concrete
-     * @param Closure|array|null $parameters
+     * @param callable|string|null $concrete
+     * @param callable|array|null $parameters
      *
      * @return  $this
      */
@@ -30,8 +29,8 @@ interface ContainerInterface extends PsrContainerInterface
      * Register a singleton binding in the container.
      *
      * @param string $abstract
-     * @param Closure|string|null $concrete
-     * @param Closure|array|null $parameters
+     * @param callable|string|null $concrete
+     * @param callable|array|null $parameters
      *
      * @return  $this
      */
