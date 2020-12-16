@@ -3,6 +3,7 @@
     "description": "The OpxCore dependency injection container interface.",
     "license": "MIT",
     "homepage": "https://opxcore.com",
+    "type": "library",
     "support": {
         "issues": "https://github.com/opxcore/container-interface/issues",
         "source": "https://github.com/opxcore/container-interface"
