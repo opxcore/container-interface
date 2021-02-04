@@ -73,6 +73,9 @@ interface ContainerInterface extends PsrContainerInterface
      * @param array|callable|null $parameters
      *
      * @return  mixed
+     *
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function make(string $abstract, $parameters = null);
 }
